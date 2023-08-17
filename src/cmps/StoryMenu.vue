@@ -38,6 +38,7 @@ export default {
             this.$store.dispatch({ type: 'logout'})
             // console.log('logout from user')
             this.$emit("logout");
+            this.$router.push('/login')
         }
         catch{
             console.log('Could not logout')

@@ -5,8 +5,10 @@ import LoginSignUp from '@/Pages/LoginSignUp.vue';
 export default {
 
     async created(){
-        const user = await this.$store.dispatch({ type: 'loadUser' })
+        // const user = await this.$store.dispatch({ type: 'loadUser' })
         this.$store.dispatch({ type: 'loadStories' })
+        this.$router.push('/login')
+        // userService.login({username:'jeniferbabiston', password:'abc'})        
     },
     components: {
         StoryNav,
@@ -15,7 +17,7 @@ export default {
         
     },
     methods:{
- 
+       
 
     },
 }
