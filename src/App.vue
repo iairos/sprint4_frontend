@@ -1,6 +1,5 @@
 <script>
 import StoryNav from '@/cmps/StoryNav.vue'
-// import { userService } from '@/services/user.service.js'
 import LoginSignUp from '@/Pages/LoginSignUp.vue';
 
 export default {
@@ -8,7 +7,6 @@ export default {
     async created(){
         const user = await this.$store.dispatch({ type: 'loadUser' })
         this.$store.dispatch({ type: 'loadStories' })
-        // userService.login({username:'jeniferbabiston', password:'abc'})        
     },
     components: {
         StoryNav,
@@ -17,19 +15,17 @@ export default {
         
     },
     methods:{
-        goHome(){
-            this.$router.push('/')
-        },
+ 
 
-    }
+    },
 }
 </script>
 
 <template>
     <section class="main-layout" >
-        <StoryNav/>
+        <!-- show storyNav v-if="userLogged" -->
+        <StoryNav/> 
         <RouterView />
-        <!-- <div @click="goHome" :class="{'screen-open':$route.name==='storyDetails' || $route.name==='newStory'}" class="screen"></div> -->
     </section>
 </template>
 
