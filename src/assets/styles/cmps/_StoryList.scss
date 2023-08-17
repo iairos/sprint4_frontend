@@ -1,0 +1,19 @@
+.story-list {
+    // list-style: none;
+    padding-inline: 80px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    a {
+        color: $clr1;
+        padding: 10px;
+    }    
+    #nav-test{
+        display: none;
+    }
+    // just for development
+    // margin-inline-start: 200px;
+}
+
+
+

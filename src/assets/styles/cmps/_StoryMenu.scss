@@ -1,0 +1,36 @@
+.story-menu{
+    z-index: 100;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+    background-color: white;
+    border: 1px solid $gray-line;
+    border-radius: 10px;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   
+    h2{
+        font-size: 14px;
+        font-weight: 500;
+        padding-block: 15px;
+        text-align: center;
+        margin: 0;
+        width: 390px;
+        height: 48px;
+        
+        // border-bottom: black solid 1px;
+        cursor: pointer;
+           
+    }
+    .red-txt{
+        font-weight: 600;
+        color: $red-txt;
+    }   
+    :not(:last-child){
+        border-bottom: 1px solid $gray-line;
+    }
+   
+}

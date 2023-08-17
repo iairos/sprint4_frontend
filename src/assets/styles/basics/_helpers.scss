@@ -1,0 +1,119 @@
+// Font Sizes
+.fs12 { font-size: rem(12px); }
+.fs14 { font-size: rem(14px); }
+.fs18 { font-size: rem(18px); }
+.fs20 { font-size: rem(20px); }
+.fs24 { font-size: rem(24px); }
+.fs28 { font-size: rem(28px); }
+.fs30 { font-size: rem(30px); }
+
+.text-center {
+    text-align: center;
+}
+// flex helpers
+
+.flex {
+
+    display: flex;
+
+    > *.full {
+        flex: 1;
+    }
+    &.column {
+        flex-direction: column;
+    }
+    &.justify-center {
+        justify-content: center;
+    }
+    &.align-center {
+        align-items: center;
+    }
+    &.align-start {
+        align-items: start;
+    }
+    &.align-end {
+        align-items: end;
+    }
+}
+
+// Icons
+
+.svg-icon {
+    svg {
+        width: 24px;
+        height: 24px;
+        
+    }
+    &:active{
+        opacity: 0.7;
+    }
+}
+// general
+.likes{
+    line-height: 18px;
+    font-weight: 600;
+    margin-block-end: 5px;
+}
+// Modal
+
+// user
+.user-title{
+    display: flex;
+    align-items: center;
+    gap:10px ;
+}
+.user-img{
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    object-fit: cover;
+
+}
+.name{
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 0;
+    margin: 0;
+}
+.name.title{
+    flex: 1;
+}
+.bold{
+    font-weight: 600;
+}
+//btn
+.action-btns{
+    display: flex;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    // gap: 10px;
+}
+.btn-wrapper{
+    span{
+        width: 40px;
+        height: 40px;
+        padding: 8px;
+        padding-inline-start: 0
+
+      
+    }
+}
+// Media helpers
+
+.square-ratio {
+    @include aspect-ratio(1, 1);
+}
+.video-ratio {
+    @include aspect-ratio(16, 9);
+}
+.portrait-ratio {
+    @include aspect-ratio(9, 16);
+}
+
+.clean-list{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
