@@ -16,6 +16,11 @@ export default {
         
         
     },
+    computed:{
+        loggedInUser() {
+      return this.$store.getters.getLoggedInUser;
+    },
+    },
     methods:{
        
 
@@ -26,7 +31,7 @@ export default {
 <template>
     <section class="main-layout" >
         <!-- show storyNav v-if="userLogged" -->
-        <StoryNav/> 
+        <StoryNav v-if="loggedInUser"/> 
         <RouterView />
     </section>
 </template>
