@@ -17,7 +17,7 @@ export const userStore = {
         resetUser(state){
             // console.log('deleteUser')
             state.user= null
-             this.$router.push('/login')
+             
         },
         setLoggedinUser(state, { user }) {
             // Yaron: needed this workaround as score not reactive from birth
