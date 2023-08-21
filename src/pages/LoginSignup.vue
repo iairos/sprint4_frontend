@@ -41,7 +41,7 @@ export default {
   data() {
     return {
       msg: '',
-      loginCred: { username: 'user1', password: '123' },
+      loginCred: { username: 'juliaiboberts', password: 'abc' },
       signupCred: { username: '', password: '', fullname: '', imgUrl : '' },
     }
   },
@@ -86,7 +86,7 @@ export default {
 
     },
     async demoUser(){
-      const demoLoginCred= { username: 'juliaiboberts', password: 'abc' }
+      const demoLoginCred= { username: 'jeniferbabiston', password: 'abc' }
       try {
         await this.$store.dispatch({ type: "login", userCred: demoLoginCred })
         this.$router.push('/')
